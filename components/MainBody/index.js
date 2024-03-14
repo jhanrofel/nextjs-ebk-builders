@@ -8,19 +8,19 @@ const MainBody = () => {
     const heroImages = [
         {
             title: 'hero1',
-            location: '/images/hero1.png',
+            location: '/images/hero/1.png',
         },
         {
             title: 'hero2',
-            location: '/images/hero2.png',
+            location: '/images/hero/2.png',
         },
         {
             title: 'hero3',
-            location: '/images/hero3.png',
+            location: '/images/hero/3.png',
         },
         {
             title: 'hero4',
-            location: '/images/hero4.png',
+            location: '/images/hero/4.png',
         },
     ]
 
