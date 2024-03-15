@@ -6,10 +6,10 @@ import '@/styles/globals.css';
 const Project = () => {
     return (
         <div className='flex-col'>
-            <div className='flex bg-zinc-800 space-x-20 justify-center h-60'>
+            <div className='banner'>
                 <Image src={'/images/banner/project.png'} alt={'projects'} width={1500} height={200}/>
             </div>
-            <div className='flex space-x-20 justify-center pt-20'>
+            <div className='grid grid-cols-1 justify-items-center py-20 md:grid-cols-3'>
                 <div className='flex-col w-80 h-80'>
                     <Image src={'/images/projects/2d.jpeg'} alt={'projects'} width={1500} height={200}/>
                     <div className='flex justifify-center p-5 font-bold'>Batasan Hills, Barangay Hall</div>
@@ -22,8 +22,6 @@ const Project = () => {
                     <Image src={'/images/projects/2a.jpeg'} alt={'projects'} width={1500} height={200}/>
                     <div className='flex justifify-center p-5 font-bold'>PMMA, North Harbor</div>
                 </div>
-            </div>
-            <div className='flex space-x-20 justify-center pt-20'>
                 <div className='flex-col w-80 h-80'>
                     <Image src={'/images/projects/2d.jpeg'} alt={'projects'} width={1500} height={200}/>
                     <div className='flex justifify-center p-5 font-bold'>One Stop Shop, Camp Crame</div>
@@ -36,8 +34,6 @@ const Project = () => {
                     <Image src={'/images/projects/2a.jpeg'} alt={'projects'} width={1500} height={200}/>
                     <div className='flex justifify-center p-5 font-bold'>Bakasyunan Resort</div>
                 </div>
-            </div>
-            <div className='flex space-x-20 justify-center pt-20'>
                 <div className='flex-col w-80 h-80'>
                     <Image src={'/images/projects/2d.jpeg'} alt={'projects'} width={1500} height={200}/>
                     <div className='flex justifify-center p-5 font-bold'>E Bingo, Cainta Rizal</div>
@@ -50,8 +46,6 @@ const Project = () => {
                     <Image src={'/images/projects/2a.jpeg'} alt={'projects'} width={1500} height={200}/>
                     <div className='flex justifify-center p-5 font-bold'>Beverly Place, Mexico Pampanga</div>
                 </div>
-            </div>
-            <div className='flex space-x-20 justify-center py-20'>
                 <div className='flex-col w-80 h-80'>
                     <Image src={'/images/projects/2d.jpeg'} alt={'projects'} width={1500} height={200}/>
                     <div className='flex justifify-center p-5 font-bold'>Urdaneta, Pangasinan</div>

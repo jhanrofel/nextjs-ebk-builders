@@ -6,12 +6,12 @@ import '@/styles/globals.css';
 const About = () => {
     return (
         <div className='flex-col'>
-            <div className='flex bg-zinc-800 space-x-20 justify-center h-60'>
+            <div className='banner'>
                 <Image src={'/images/banner/about.png'} alt={'about'} width={1500} height={200}/>
             </div>
-            <div className='flex space-x-20 justify-center py-20'>
-                <div className='w-2/6 text-justify'>
-                    <p className='text-center text-3xl font-bold py-5'>BACKGROUND</p>
+            <div className='about_item flex-col'>
+                <div className='about_item_text'>
+                    <p className='about_item_text_title'>BACKGROUND</p>
                     <p>
                         <b>EBK Builders OPC,</b> formerly recognized as EBK Glass and Aluminum Installation
                         Services, has been in operation since February 2017. As part of our commitment to
@@ -30,16 +30,16 @@ const About = () => {
                         customers and hard work.
                     </p>
                 </div>
-                <div className='w-3/6'>
+                <div className='about_item_image'>
                     <Image src={'/images/hero/3.png'} alt={'about'} width={1500} height={200}/>
                 </div>
             </div>
-            <div className='flex space-x-20 justify-center py-20'>
-                <div className='w-3/6'>
-                    <Image src={'/images/hero/2.png'} alt={'about'} width={1500} height={200}/>
+            <div className='about_item flex-col-reverse'>
+                <div className='about_item_image'>
+                    <Image src={'/images/hero/2.png'} alt={'mission-statement'} width={1500} height={200}/>
                 </div>
-                <div className='w-2/6 text-justify'>
-                    <p className='text-center text-3xl font-bold py-5'>MISSION STATEMENT</p>
+                <div className='about_item_text'>
+                    <p className='about_item_text_title'>MISSION STATEMENT</p>
                     <p>
                         The key mission of <b>EBK Builders OPC</b> is to be financially sustainable; specializing
                         in Glass & Aluminum Finished products and Building Construction, representative of and
@@ -55,9 +55,9 @@ const About = () => {
                         to be socially responsible.</li>
                 </div>
             </div>
-            <div className='flex space-x-20 justify-center py-20'>
-                <div className='w-2/6 text-justify'>
-                    <p className='text-center text-3xl font-bold py-5'>OUR STAFF</p>
+            <div className='about_item flex-col'>
+                <div className='about_item_text'>
+                    <p className='about_item_text_title'>OUR STAFF</p>
                     <li>We are a successful company, and we are proud of our employees. Our people are
                         highly motivated, well trained, competent and with many years of experience.</li>
                     <li>Our focus at all the times is based on client satisfaction. The company has a close
@@ -71,16 +71,16 @@ const About = () => {
                     <li>Staff are fully trained, and an in-house on the job training and development
                         program is also in place.</li>
                 </div>
-                <div className='w-3/6'>
-                    <Image src={'/images/hero/1.png'} alt={'about'} width={1500} height={200}/>
+                <div className='about_item_image'>
+                    <Image src={'/images/hero/1.png'} alt={'our-staff'} width={1500} height={200}/>
                 </div>
             </div>
-            <div className='flex space-x-20 justify-center py-20'>
-                <div className='w-3/6'>
-                    <Image src={'/images/hero/4.png'} alt={'about'} width={1500} height={200}/>
+            <div className='about_item flex-col-reverse'>
+                <div className='about_item_image'>
+                    <Image src={'/images/hero/4.png'} alt={'key-areas'} width={1500} height={200}/>
                 </div>
-                <div className='w-2/6 text-justify'>
-                    <p className='text-center text-3xl font-bold py-5'>KEY AREAS</p>
+                <div className='about_item_text'>
+                    <p className='about_item_text_title'>KEY AREAS</p>
                     <li>Our staff is fully committed, and our business activities are divided into: Production,
                         Research and Development, Logistics, Marketing, Purchasing, Administration,
                         Finance, Quality Control.</li>

@@ -26,7 +26,7 @@ const MainBody = () => {
 
     return (
         <div className='flex justify-center'>
-            <Carousel className='w-1/2' showArrows={true} infiniteLoop={true} autoPlay={true} interval={3000} showThumbs={false}>
+            <Carousel className='w-full lg:w-1/2' showArrows={true} infiniteLoop={true} autoPlay={true} interval={3000} showThumbs={false}>
                 {heroImages.map((image) => (
                     <div key={image.title}>
                         <Image src={image.location} alt={image.title} width={300} height={200}/>

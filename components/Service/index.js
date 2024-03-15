@@ -6,12 +6,12 @@ import '@/styles/globals.css';
 const Service = () => {
     return (
         <div className='flex-col'>
-            <div className='flex bg-zinc-800 space-x-20 justify-center h-60'>
+            <div className='banner'>
                 <Image src={'/images/banner/service.png'} alt={'about'} width={1500} height={200}/>
             </div>
-            <div className='flex space-x-20 justify-center py-20'>
-                <div className='w-2/6 text-justify'>
-                    <p className='text-center text-3xl font-bold py-5'>uPVC Windows & Doors</p>
+            <div className='about_item flex-col'>
+                <div className='about_item_text'>
+                    <p className='about_item_text_title'>uPVC Windows & Doors</p>
                     <li>Material is made out of Un-Plasticized Poly-Vinyl Chloride with chemical coating for
                     UV rays, which makes the profiles withstand warping and discoloration.</li>
                     <li>It is corrosion-free under adverse climatic conditions such as coastal areas and
@@ -36,16 +36,16 @@ const Service = () => {
                     <li>Easy to maintain and clean. Material is self-colored, no painting or polishing
                     needed.</li>
                 </div>
-                <div className='w-3/6'>
-                    <Image src={'/images/hero/3.png'} alt={'about'} width={1500} height={200}/>
+                <div className='about_item_image'>
+                    <Image src={'/images/hero/3.png'} alt={'upvc-windows-and-doors'} width={1500} height={200}/>
                 </div>
             </div>
-            <div className='flex space-x-20 justify-center py-20'>
-                <div className='w-3/6'>
+            <div className='about_item flex-col-reverse'>
+                <div className='about_item_image'>
                     <Image src={'/images/hero/2.png'} alt={'about'} width={1500} height={200}/>
                 </div>
-                <div className='w-2/6 text-justify'>
-                    <p className='text-center text-3xl font-bold py-5'>ALUMINUM WINDOWS & DOORS</p>
+                <div className='about_item_text'>
+                    <p className='about_item_text_title'>ALUMINUM WINDOWS & DOORS</p>
                     <li>Aluminum Windows and Doors is popular because of its low maintenance.</li>
                     <li>It is long lasting & reliable.</li>
                     <li>Strong & durable.</li>
@@ -54,31 +54,31 @@ const Service = () => {
                     <li>Durable factory applied color options.</li>
                 </div>
             </div>
-            <div className='flex space-x-20 justify-center py-20'>
-                <div className='w-2/6 text-justify'>
-                    <p className='text-center text-3xl font-bold py-5'>SHOWER ENCLOSURE</p>
+            <div className='about_item flex-col'>
+                <div className='about_item_text'>
+                    <p className='about_item_text_title'>SHOWER ENCLOSURE</p>
                     <li>Frameless Shower Enclosure</li>
                     <li>Sliding Shower Enclosure</li>
                     <li>Swing Type Shower Enclosure</li>
-                    <p className='text-center text-3xl font-bold py-5 pt-20'>STAIR RAILING</p>
+                    <p className='about_item_text_title'>STAIR RAILING</p>
                     <li>Using Stainless Steel Railing</li>
                     <li>Using Frameless Glass only</li>
 
-                    <p className='text-center text-3xl font-bold py-5 pt-20'>BLINDS</p>
+                    <p className='about_item_text_title'>BLINDS</p>
                     <li>Combi Blinds</li>
                     <li>Roller Blinds</li>
                     <li>Blackout</li>
                 </div>
-                <div className='w-3/6'>
+                <div className='about_item_image'>
                     <Image src={'/images/hero/1.png'} alt={'about'} width={1500} height={200}/>
                 </div>
             </div>
-            <div className='flex space-x-20 justify-center py-20'>
-                <div className='w-3/6'>
+            <div className='about_item flex-col-reverse'>
+                <div className='about_item_image'>
                     <Image src={'/images/hero/4.png'} alt={'about'} width={1500} height={200}/>
                 </div>
-                <div className='w-2/6 text-justify'>
-                    <p className='text-center text-3xl font-bold py-5'>BUILDING CONSTRUCTION</p>
+                <div className='about_item_text'>
+                    <p className='about_item_text_title'>BUILDING CONSTRUCTION</p>
                     <li>Residential Construction</li>
                     <li>Commercial Construction</li>
                     <li>Industrial Construction</li>
