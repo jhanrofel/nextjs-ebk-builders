@@ -13,7 +13,9 @@ const Header = props => {
     const [isOpenMenuBurger, setIsOpenMenuBurger] = useState(false);
     return <div className='flex justify-between p-6'>
         <div className='w-40 md:w-80'>
-            <Image src={'/images/logo-full.jpg'} alt='logo' width={330} height={300}/>
+            <Link href="/">
+                <Image src={'/images/logo-full.jpg'} alt='logo' width={330} height={300}/>
+            </Link>            
         </div>
         <div className='hidden md:flex md:font-bold md:text-md md:space-x-10 md:p-8'>
             <div className={pathname === '/' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/">HOME</Link></div>
