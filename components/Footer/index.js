@@ -5,13 +5,13 @@ import '@/styles/globals.css';
 import Link from 'next/link';
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { FaPhone, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
+import { FaPhone, FaFacebookSquare, FaInstagramSquare, FaTiktok } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
 
 const Footer = () => {
     const router = useRouter();
 
-    return <div className='flex bg-red-900 text-white text-sm py-20 flex-col space-y-20 md:space-y-0 md:flex-row md:justify-around'>
+    return <div className='flex bg-red-900 text-white text-sm py-20 flex-col space-y-20 md:space-y-0 md:flex-row md:justify-around '>
         <div className='footer_item'>
             <div className='flex pb-5'>
                 <Image src={'/images/logo-full.jpg'} alt='logo' width={300} height={200}/>
@@ -20,8 +20,13 @@ const Footer = () => {
                 <Link href="https://www.facebook.com/ebkbuildersopc?mibextid=uzlsIk" target="_blank">
                     <FaFacebookSquare size={40} />
                 </Link>
-                <Link href="https://www.instagram.com/ebkbuilders/?igsh=MXZ6dGJ1enp3MWV4MA%3D%3D&utm_source=qr&fbclid=IwAR2y0EY9Gh58ypGEu9MimqVCUE-LlWg9qTyibSVXncqCyv9VOy8xBgtRSK0" target="_blank">
+                <Link href="https://www.instagram.com/ebkbuildersopc/?igsh=MXZ6dGJ1enp3MWV4MA%3D%3D&utm_source=qr&fbclid=IwY2xjawEaqelleHRuA2FlbQIxMAABHbduo0_81outUYJQgqJLeCogesDOrMMoCklDtoWBPTofgMI9jYaP3HVJdA_aem_2Lr7YNjM4r3vouy1X-6cOA" target="_blank">
                     <FaInstagramSquare size={40} />
+                </Link>
+                <Link href="https://www.tiktok.com/@ebk.builders.opc?_t=8oYWpfcEUXA&_r=1&fbclid=IwY2xjawEarsxleHRuA2FlbQIxMAABHYrEpBdfvntdRE9ilhGTgs0-rsmUD86XeXWd1UShZqwbBYJObXcNeq9ucw_aem_RTtBkIG53qerrk0l4_jvwQ" target="_blank">
+                    <div className='bg-white p-1 rounded-[4px] mt-0.5'>
+                        <FaTiktok size={28} color='maroon'/>
+                    </div>                    
                 </Link>
             </div>
         </div>

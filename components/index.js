@@ -5,3 +5,4 @@ export { default as About } from './About';
 export { default as Service } from './Service';
 export { default as Project } from './Project';
 export { default as Contact } from './Contact';
+export { default as Gallery } from './Gallery';

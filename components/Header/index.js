@@ -11,17 +11,17 @@ import { useState } from 'react';
 const Header = props => {
     const pathname = usePathname();
     const [isOpenMenuBurger, setIsOpenMenuBurger] = useState(false);
-    return <div className='flex justify-between p-6'>
+    return <div className='flex justify-between p-6 bg-[url("/images/header.png")] bg-cover bg-center bg-no-repeat' >
         <div className='w-40 md:w-80'>
             <Link href="/">
-                <Image src={'/images/logo-full.jpg'} alt='logo' width={330} height={300}/>
+                <Image src={'/images/logo-no-bg.png'} alt='logo' width={330} height={300}/>
             </Link>            
         </div>
-        <div className='hidden md:flex md:font-bold md:text-md md:space-x-10 md:p-8'>
+        <div className='hidden md:flex md:font-bold md:text-md md:space-x-10 md:p-8 text-white'>
             <div className={pathname === '/' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/">HOME</Link></div>
             <div className={pathname === '/about' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/about">ABOUT</Link></div>
             <div className={pathname === '/service' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/service">SERVICES</Link></div>
-            <div className={pathname === '/project' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/project">PROJECTS</Link></div>
+            <div className={pathname === '/project' || pathname === '/gallery' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/project">PROJECTS</Link></div>
             <div className={pathname === '/contact' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/contact">CONTACTS</Link></div>
         </div>
         <div className='p-2 md:hidden'>
@@ -31,7 +31,7 @@ const Header = props => {
             <div className={pathname === '/' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/">Home</Link></div>
             <div className={pathname === '/about' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/about">About</Link></div>
             <div className={pathname === '/service' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/service">Services</Link></div>
-            <div className={pathname === '/project' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/project">Projects</Link></div>
+            <div className={pathname === '/project' || pathname === '/gallery' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/project">Projects</Link></div>
             <div className={pathname === '/contact' ? 'text-red-500' : 'hover:text-red-500'}><Link href="/contact">Contacts</Link></div>
         </div>}        
     </div>
