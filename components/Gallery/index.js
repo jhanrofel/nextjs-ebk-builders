@@ -62,7 +62,7 @@ const Gallery = ({ galleryId }) => {
             <div className='banner'>
                 <Image src={'/images/banner/gallery.png'} alt={'projects'} width={1500} height={200}/>
             </div>
-            <div className='flex justify-center text-4xl font-bold my-10'>
+            <div className='flex justify-center text-xl md:text-4xl font-bold my-10 mx-10'>
                 {dataGallery[0].title}
             </div>
             <div className='grid grid-cols-1 justify-items-center pb-20 md:grid-cols-3'>
@@ -72,10 +72,9 @@ const Gallery = ({ galleryId }) => {
                             <div className='bg-gray-800 relative w-80 h-60'>
                                 <Image
                                     src={`/images/gallery/${galleryId}/${items}.jpeg`}
-                                    alt={`${galleryId} - ${items} Image`}                            
-                                    layout="fill"
-                                    objectFit="contain"
-                                    objectPosition="center"
+                                    alt={`${galleryId} - ${items} Image`}
+                                    fill
+                                    sizes='100'
                                 />
                             </div>                    
                         </div> 

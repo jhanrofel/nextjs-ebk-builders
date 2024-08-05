@@ -59,10 +59,9 @@ const Project = () => {
                                 <div className='bg-gray-800 relative w-80 h-60'>
                                     <Image
                                         src={`/images/gallery/${item.id}/main.jpeg`}
-                                        alt={`${item.title} Image`}                            
-                                        layout="fill"
-                                        objectFit="contain"
-                                        objectPosition="center"
+                                        alt={`${item.title} Image`}
+                                        fill
+                                        sizes='100'
                                     />
                                 </div>                    
                                 <div className='justify-center p-5 font-bold'>{item.title}</div>

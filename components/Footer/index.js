@@ -67,40 +67,13 @@ const Footer = () => {
         </div>
         <div className='footer_item hover:cursor-pointer' onClick={() => router.push('/project')}>
             <div className='footer_item_title'>WORK GALLERY</div>
-            <div className='space-y-4'>
-                <div className='flex space-x-4'>
-                    <div>
-                        <Image src={'/images/projects/2a.jpeg'} alt={'projects'} width={60} height={60}/>
-                    </div>
-                    <div>
-                        <Image src={'/images/projects/2d.jpeg'} alt={'projects'} width={60} height={60}/>
-                    </div>
-                    <div>
-                        <Image src={'/images/projects/2b.jpeg'} alt={'projects'} width={60} height={60}/>
-                    </div>
-                </div>
-                <div className='flex space-x-4'>
-                    <div>
-                        <Image src={'/images/projects/1a.jpeg'} alt={'projects'} width={60} height={60}/>
-                    </div>
-                    <div>
-                        <Image src={'/images/projects/2a.jpeg'} alt={'projects'} width={60} height={60}/>
-                    </div>
-                    <div>
-                        <Image src={'/images/projects/3b.jpeg'} alt={'projects'} width={60} height={60}/>
-                    </div>            
-                </div>
-                <div className='flex space-x-4'>
-                    <div>
-                        <Image src={'/images/projects/2d.jpeg'} alt={'projects'} width={60} height={60}/>
-                    </div>
-                    <div>
-                        <Image src={'/images/projects/1b.jpeg'} alt={'projects'} width={60} height={60}/>
-                    </div>
-                    <div>
-                        <Image src={'/images/projects/3d.jpeg'} alt={'projects'} width={60} height={60}/>
-                    </div>
-                </div>
+            <div  className='bg-gray-800 relative w-80 h-60'>
+                <Image
+                    src={'/images/work-gallery.jpeg'}
+                    alt={'Work Gallery Image'}
+                    fill
+                    sizes='100'
+                />
             </div>
         </div>
     </div>
