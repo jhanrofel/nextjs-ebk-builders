@@ -2,55 +2,10 @@
 
 import Image from 'next/image';
 import '@/styles/globals.css';
-import { useRouter } from 'next/navigation';
+import { galleryData } from './constants';
 
 const Gallery = ({ galleryId }) => {
-    const router = useRouter();
-
-    const data = [
-        {
-            id: '1',
-            title: 'Casa Borbon - San Isidro, Batangas',
-            count: 8,
-        },
-        {
-            id: '2',
-            title: 'Container of Hope - Sto. Tomas, Batangas',
-            count: 4,
-        },
-        {
-            id: '3',
-            title: 'HOM-COR Doors',
-            count: 7,
-        },
-        {
-            id: '4',
-            title: 'Iloilo Project - Jaro City, Iloilo',
-            count: 7,
-        },
-        {
-            id: '5',
-            title: 'Marsada Hustle House - Quezon City',
-            count: 6,
-        },
-        {
-            id: '6',
-            title: "Peu Brut 05 - Nature's Farm Magallanes, Cavite",
-            count: 8,
-        },
-        {
-            id: '7',
-            title: "Peu Brut 05 - Nature's Farm Magallanes, Cavite",
-            count: 8,
-        },
-        {
-            id: '8',
-            title: "Two - Storey Residence - Antipolo Rizal",
-            count: 6,
-        },
-    ]
-
-    const dataGallery = data.filter((items) => items.id === galleryId);
+    const dataGallery = galleryData.filter((items) => items.id === galleryId);
 
     const listItems = ['main'];
     for (let i = 1; i <= dataGallery[0].count; i++) {
